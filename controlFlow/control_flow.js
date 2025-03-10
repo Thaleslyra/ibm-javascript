@@ -48,3 +48,16 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+let typeEmployee = 'enroled member'
+let dietaryservices;
+
+if(typeEmployee === 'employee'){
+    console.log("autorized to Dietary Services")
+}else if(typeEmployee === 'enroled member'){
+    console.log('Autorized to have access to Dietary Services and One-on-one interaction with a dietician')
+}else if (typeEmployee === 'subscriber'){
+    console.log('have partial access to Dietary Services')
+}else {
+    console.log('enroll or at list subscribe first')
+}
